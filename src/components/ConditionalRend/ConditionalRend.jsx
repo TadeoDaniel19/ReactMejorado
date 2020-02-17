@@ -1,18 +1,16 @@
-import React, { Component } from 'react'
+import React, {Component} from 'react'
 
-class ConditionalRend extends Component {
-  render (){
-    if(this.props.saluda) {
-      return (
-        <h1>Hola! eres un crack en react!</h1> 
-      )
-    } else {   
-      return(
-        <h2>Lo siento! no estas preparado para esto.</h2>
-      )
-      }
+class UserCard extends Component {
+  render () {
+    return (
+      <div>
+      <h2>------------------------------------------</h2>  
+      <strong>Nombre</strong> : {this.props.name} <br/>
+      <strong>Edad</strong> : {this.props.age} <br/>
+      <strong>Estudia</strong> : {this.props.study ? 's' : 'n'}
+      </div>
+    )
   }
 }
 
-
-export default ConditionalRend
+export default UserCard

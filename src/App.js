@@ -5,9 +5,11 @@ import EventInput from './components/EventInput'
 import PersistenceEvent from './components/PersistenceEvent'
 import ChildComponent from './components/ChildComponent'
 import ConditionalRend from './components/ConditionalRend'
+import ListFruit from './components/ListFruit'
+import Students from './Data/students'
 //import Cat from './components/Cat'
 import style from './App.module.css'
-
+const DataStudents = Students.youngs
 /* const mishi = {
   lifes: 4,
   fights: 5,
@@ -38,7 +40,14 @@ class App extends Component {
           onSaludar={this.handlerChild}
         />
         <h1> {this.state.name}</h1>
-        <ConditionalRend saluda/>
+        {
+        DataStudents.map((student,index) => {
+          return (
+            <ConditionalRend  key = {index} name = {student.name} age = {student.age} study = {student.study}/>
+          )
+        })  
+        }
+        <ListFruit /> 
       </div>
     )
   }

@@ -1,0 +1,24 @@
+{
+  "youngs" : [
+    {
+    "name": "Tadeo",
+    "age": 21,
+    "study": true
+    },
+    {
+      "name": "Hector",
+      "age": 21,
+      "study": false
+    },
+    {
+      "name": "Daniel",
+      "age": 21,
+      "study": true
+    },
+    {
+      "name": "Kendrick",
+      "age": 29,
+      "study": 0
+    }      
+  ]
+}
