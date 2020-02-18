@@ -4,10 +4,11 @@ class UserCard extends Component {
   render () {
     return (
       <div>
-      <h2>------------------------------------------</h2>  
+      <hr/>
       <strong>Nombre</strong> : {this.props.name} <br/>
       <strong>Edad</strong> : {this.props.age} <br/>
       <strong>Estudia</strong> : {this.props.study ? 's' : 'n'}
+      <hr/>
       </div>
     )
   }

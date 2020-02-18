@@ -7,8 +7,11 @@ import ChildComponent from './components/ChildComponent'
 import ConditionalRend from './components/ConditionalRend'
 import ListFruit from './components/ListFruit'
 import Students from './Data/students'
+import ControlComponent from  './ControlComponent'
+import Calculator from './components/Calculator'
 //import Cat from './components/Cat'
 import style from './App.module.css'
+
 const DataStudents = Students.youngs
 /* const mishi = {
   lifes: 4,
@@ -33,7 +36,9 @@ class App extends Component {
         <TarjetaFruta name='Mango' price='12.50' />
         <TarjetaFruta name='Melon' price='22.50' />
         <TarjetaFruta name='Manzana' price='8.50' />
+        <br />
         <Counter />
+        <br/>
         <EventInput />
         <PersistenceEvent />
         <ChildComponent
@@ -48,6 +53,9 @@ class App extends Component {
         })  
         }
         <ListFruit /> 
+        <ControlComponent />
+        <br/>
+        <Calculator />
       </div>
     )
   }
