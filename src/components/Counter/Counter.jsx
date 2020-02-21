@@ -9,24 +9,19 @@ class Counter extends Component {
   }
 
   add = () => {
-    this.setState((prevState) => ({
-      video : {
+    this.setState(prevState => ({
+      video: {
         ...this.state.video,
-        likes: this.state.video.likes + 1 
+        likes: this.state.video.likes + 1
       }
     }))
-  
   }
-  
-  render() {
+
+  render () {
     return (
       <div>
-      <h1 className= {style.h1}> 
-        {this.state.video.title}
-      </h1>
-      <button onClick={this.add}>
-        Likes : ({this.state.video.likes})
-      </button>
+        <h1 className={style.h1}>{this.state.video.title}</h1>
+        <button onClick={this.add}>Likes : ({this.state.video.likes})</button>
       </div>
     )
   }

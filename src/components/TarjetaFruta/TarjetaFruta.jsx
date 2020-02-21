@@ -30,17 +30,15 @@ class TarjetaFruta extends Component {
     const fruitClass = styles.card + ' ' + activeClass
 
     return (
-      <div className= {fruitClass}>
+      <div className={fruitClass}>
         <h3>{this.props.name}</h3>
         <div>Cantidad : {this.state.cantidad}</div>
-        <button onClick={this.agregar} >+</button>
-        <button onClick={this.quitar} >-</button>
-        <button onClick={this.limpiar} >Limpiar</button>
+        <button onClick={this.agregar}>+</button>
+        <button onClick={this.quitar}>-</button>
+        <button onClick={this.limpiar}>Limpiar</button>
         <p>$ {this.props.price}</p>
         <hr />
-        <p>
-          Total : ${ this.props.price * this.state.cantidad }
-        </p>
+        <p>Total : ${this.props.price * this.state.cantidad}</p>
       </div>
     )
   }

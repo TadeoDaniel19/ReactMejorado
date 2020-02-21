@@ -1,21 +1,15 @@
-import React, {Component} from 'react'
+import React, { Component } from 'react'
 import Fruit from '../../Data/vegan'
 const DataFruits = Fruit.fruits
 
 class ListFruit extends Component {
   render () {
     return (
-      <div> 
+      <div>
         <ul>
-        {
-          DataFruits.map((fruit,index) => {
-            return (
-              <li key = {index}> 
-                {fruit}
-              </li>
-            )
-          })
-        }
+          {DataFruits.map((fruit, index) => {
+            return <li key={index}>{fruit}</li>
+          })}
         </ul>
       </div>
     )

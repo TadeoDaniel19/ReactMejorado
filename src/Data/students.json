@@ -1,9 +1,9 @@
 {
-  "youngs" : [
+  "youngs": [
     {
-    "name": "Tadeo",
-    "age": 21,
-    "study": true
+      "name": "Tadeo",
+      "age": 21,
+      "study": true
     },
     {
       "name": "Hector",
@@ -19,6 +19,6 @@
       "name": "Kendrick",
       "age": 29,
       "study": 0
-    }      
+    }
   ]
 }
