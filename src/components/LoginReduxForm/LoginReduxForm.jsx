@@ -1,11 +1,19 @@
 import React from 'react'
 import { reduxForm, Field } from 'redux-form'
 
-const LoginReduxForm = (props) => {
+const LoginReduxForm = props => {
   const handleSubmit = formValues => {
-    console.log( "esto imprime ---->", formValues)
+    console.log('esto imprime ---->', formValues.password)
+    if (
+      formValues.email === 'hector_lectric@hotmail.com' &&
+      formValues.password === '1234'
+    ) {
+      alert('Bienvenido!')
+    } else {
+      alert('Algo salio mal. vuelve a intentarlo!')
+    }
   }
-  
+
   return (
     <form onSubmit={props.handleSubmit(handleSubmit)}>
       <div>
@@ -16,6 +24,7 @@ const LoginReduxForm = (props) => {
         <label>Password: </label>
         <Field name='password' type='password' component='input' />
       </div>
+      <br></br>
       <button type='submit'>Login</button>
     </form>
   )
