@@ -1,5 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
+import {Button, Typography} from '@material-ui/core'
 import { increment, decrement } from '../../Redux/Actions/counterActions'
 
 const CounterRedux = ({
@@ -11,10 +12,10 @@ const CounterRedux = ({
     
   return (
     <div>
-      <button onClick={increment}> + </button>
-      <button onClick={decrement}> - </button>
-      <h1>{counter}</h1>
-      <strong>{name}</strong>
+      <Button onClick={increment} variant="contained" color="primary"> + </Button>
+      <Button onClick={decrement}> - </Button>
+      <Typography> {counter} </Typography>
+      <Typography> {name} </Typography>
     </div>
   )
 }

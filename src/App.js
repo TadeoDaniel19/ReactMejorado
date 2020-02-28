@@ -6,6 +6,7 @@ import { BrowserRouter, Route,NavLink } from 'react-router-dom'
 import CounterRedux from './components/CounterRedux'
 import InfoRedux from './components/InfoRedux'
 import Todos from './components/Todos'
+import {Typography} from '@material-ui/core'
 
 const navStyles = {
   display: 'flex',
@@ -25,7 +26,7 @@ const secondStyle = {
 }
 
 const Home = () => (
-  <h1>Bienvenido!</h1>
+  <Typography>Bienvenido! </Typography>
 )
 
 const Navegation = () => {

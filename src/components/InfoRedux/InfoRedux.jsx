@@ -1,4 +1,5 @@
 import React from 'react'
+import {TextField, Typography} from '@material-ui/core'
 import { connect } from 'react-redux'
 import {updateName} from '../../Redux/Actions/userActions'
 
@@ -10,8 +11,8 @@ const InfoRedux = props => {
 
   return (
     <div>
-      <h1>{props.user.name} - {props.user.country}</h1>
-      <input onChange = {handlerChange} placeholder='INGRESA UN NOMBRE'></input>
+      <Typography>{props.user.name} - {props.user.country}</Typography>
+      <TextField onChange = {handlerChange} placeholder='INGRESA UN NOMBRE'/>
     </div>
   )
 }

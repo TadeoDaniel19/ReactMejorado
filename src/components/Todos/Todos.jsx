@@ -1,4 +1,5 @@
 import React from 'react'
+import {Typography} from '@material-ui/core'
 import { connect } from 'react-redux'
 import TodoForm from './TodoFrom'
 import TodoList from './TodoList'
@@ -26,7 +27,7 @@ const Todos = ({ todo, addTodo, updateTodo, deleteTodo }) => {
 
   return (
     <div>
-      <h1>ToDo List</h1>
+      <Typography>ToDo List</Typography>
       <TodoForm onSubmit={handleSubmit} />
       <TodoList
         todos={todo.todos}
